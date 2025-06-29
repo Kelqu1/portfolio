@@ -1,0 +1,39 @@
+
+body {
+    background-color: white; /* Fond noir partout */
+    transition: background-color 0.3s, color 0.3s;
+    color: black; /* Texte en blanc pour lisibilité */
+    margin: 15px; /* Supprime les marges par défaut */
+    padding: 15px; /* Supprime les marges intérieures */
+}
+#darkModeToggle {
+    top: 20px; /* Distance par rapport au haut de la page */
+    right: 20px; /* Distance par rapport à la droite de la page */
+    padding: 10px 20px;
+    background-color: #e4e4e4; /* Couleur de fond */
+    border: none; /* Supprimer les bordures */
+    cursor: pointer; /* Changer le curseur en pointeur lors du survol */
+    border-radius: 5px; /* Bords arrondis */
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: #333;
+    color: white;
+}
+
+body.light-mode #darkModeToggle {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Mode sombre */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
