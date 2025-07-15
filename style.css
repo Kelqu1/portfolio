@@ -46,18 +46,35 @@ body.light-mode {
 }
 /* Add a black background color to the top navigation */
 .topnav {
+  display: flex;
+  align-items: center;
   background-color: #5c5c5c;
   overflow: hidden;
+  border-radius: 10px
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 15px 15px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: 10px;
+}
+
+.topnav a:first-child {
+  /* Les liens sauf le dernier (celui du bouton) restent collés à gauche */
+  margin-left: 10px;
+}
+
+.topnav a:not(:last-child) {
+  /* Les liens sauf le dernier (celui du bouton) restent collés à gauche */
+  margin-right: 0;
+}
+
+.topnav a:last-child {
+  margin-left: auto; /* pousse le bouton à droite */
 }
 
 /* Change the color of links on hover */
