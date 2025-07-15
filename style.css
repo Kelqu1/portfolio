@@ -1,8 +1,7 @@
-
 body {
-    background-color: white; /* Fond noir partout */
+    background-color: rgb(240, 240, 240); /* Fond blanc partout */
     transition: background-color 0.3s, color 0.3s;
-    color: black; /* Texte en blanc pour lisibilité */
+    color: black; /* Texte en noir pour lisibilité */
     margin: 15px; /* Supprime les marges par défaut */
     padding: 15px; /* Supprime les marges intérieures */
 }
@@ -10,7 +9,7 @@ body {
     top: 20px; /* Distance par rapport au haut de la page */
     right: 20px; /* Distance par rapport à la droite de la page */
     padding: 10px 20px;
-    background-color: #e4e4e4; /* Couleur de fond */
+    background-color: #d4d4d4; /* Couleur de fond */
     border: none; /* Supprimer les bordures */
     cursor: pointer; /* Changer le curseur en pointeur lors du survol */
     border-radius: 5px; /* Bords arrondis */
@@ -22,7 +21,7 @@ body.dark-mode #darkModeToggle {
 }
 
 body.light-mode #darkModeToggle {
-    background-color: #f0f0f0;
+    background-color: #d4d4d4; /* Couleur de fond */
     color: black;
 }
 
@@ -34,6 +33,14 @@ body.dark-mode {
 
 /* Mode sombre */
 body.light-mode {
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     color: black;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px; /* espace entre le texte et le bouton */
+    margin-bottom: 20px;
 }
