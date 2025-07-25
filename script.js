@@ -8,12 +8,12 @@ btn.addEventListener('click', () => {
     if (body.classList.contains('dark-mode')) {
         body.classList.remove('dark-mode');
         body.classList.add('light-mode');
-        btn.textContent = "mode sombre"; // Change le texte du bouton
+        btn.textContent = "🌙"; // Change le texte du bouton
     } else {
         // Sinon, on passe en mode sombre
         body.classList.remove('light-mode');
         body.classList.add('dark-mode');
-        btn.textContent = "mode clair"; // Change le texte du bouton
+        btn.textContent = "☀️"; // Change le texte du bouton
     }
     updateGithubLogo(); // Met à jour le logo GitHub selon le mode
 });
