@@ -1,10 +1,3 @@
-body {
-    background-color: rgb(240, 240, 240); /* Fond blanc partout */
-    transition: background-color 0.3s, color 0.3s;
-    color: black; /* Texte en noir pour lisibilité */
-    margin: 15px; /* Supprime les marges par défaut */
-    padding: 15px; /* Supprime les marges intérieures */
-}
 #darkModeToggle {
     top: 20px; /* Distance par rapport au haut de la page */
     right: 20px; /* Distance par rapport à la droite de la page */
@@ -14,28 +7,6 @@ body {
     border: none; /* Supprimer les bordures */
     cursor: pointer; /* Changer le curseur en pointeur lors du survol */
     border-radius: 5px; /* Bords arrondis */
-}
-
-body.dark-mode #darkModeToggle {
-    background-color: #333;
-    color: white;
-}
-
-body.light-mode #darkModeToggle {
-    background-color: #d4d4d4; /* Couleur de fond */
-    color: black;
-}
-
-/* Mode sombre */
-body.dark-mode {
-    background-color: #121212;
-    color: white;
-}
-
-/* Mode sombre */
-body.light-mode {
-    background-color: rgb(240, 240, 240);
-    color: black;
 }
 
 .header-bar {
@@ -88,4 +59,34 @@ body.light-mode {
 .topnav a.active {
   background-color: #0d83d1;
   color: white;
+}
+
+body {
+    background-color: rgb(240, 240, 240); /* Fond blanc partout */
+    transition: background-color 0.3s, color 0.3s;
+    color: black; /* Texte en noir pour lisibilité */
+    margin: 15px; /* Supprime les marges par défaut */
+    padding: 15px; /* Supprime les marges intérieures */
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: #333;
+    color: white;
+}
+
+body.light-mode #darkModeToggle {
+    background-color: #d4d4d4; /* Couleur de fond */
+    color: black;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Mode sombre */
+body.light-mode {
+    background-color: rgb(240, 240, 240);
+    color: black;
 }
