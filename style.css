@@ -1,3 +1,11 @@
+body {
+    background-color: rgb(240, 240, 240); /* Fond blanc partout */
+    transition: background-color 0.3s, color 0.3s;
+    color: black; /* Texte en noir pour lisibilité */
+    margin: 15px; /* Supprime les marges par défaut */
+    padding: 15px; /* Supprime les marges intérieures */
+}
+
 #darkModeToggle {
     top: 20px; /* Distance par rapport au haut de la page */
     right: 20px; /* Distance par rapport à la droite de la page */
@@ -82,11 +90,46 @@ body.light-mode {
   background-color: #0d83d1;
   color: white;
 }
+.projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
 
-body {
-    background-color: rgb(240, 240, 240); /* Fond blanc partout */
-    transition: background-color 0.3s, color 0.3s;
-    color: black; /* Texte en noir pour lisibilité */
-    margin: 15px; /* Supprime les marges par défaut */
-    padding: 15px; /* Supprime les marges intérieures */
-}
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .project-card a {
+      display: inline-block;
+      background: #007BFF;
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .project-card a:hover {
+      background: #0056b3;
+    }
